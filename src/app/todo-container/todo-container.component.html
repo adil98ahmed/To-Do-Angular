@@ -1,0 +1,9 @@
+<div class="container  my-2">
+    <div class="row d-flex">
+        <input class="mx-1" value="{{todoItem['name']}}" type="text"
+            disabled="disabled" />
+        <button (click)="mark(todoItem)" class="btn btn-success mx-2">Mark As
+            Done</button>
+        <button (click)="delete(todoItem)" class="btn btn-danger mx2">Delete</button>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="container my-5">
+    <app-child (eventEmmiter)="reciveData($event)"></app-child>
+<div class="components container mt-5">
+    <h3>Todo Components container</h3>
+    <div *ngFor="let todo of allData" [ngClass] = "{'done':todo.status}">
+        <app-todo-container   [allItems]="allData"
+        [todoItem]="todo" >
+    </app-todo-container>
+</div>
+</div>
+</div>
